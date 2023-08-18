@@ -692,7 +692,7 @@ button {
   letter-spacing: 0.04em;
   background: transparent;
   border-radius: 4px;
-  border: 1px solid var(--white, #fff);
+  border: 1px solid var(--white);
   font-family: inherit;
   outline: transparent;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -701,7 +701,7 @@ button {
 
 .form-input:hover,
 .form-input:focus {
-  border-color: #4d5ae5;
+  border-color: var(--iris);
 }
 .label-text {
   margin-bottom: 16px;
@@ -744,7 +744,7 @@ button {
 }
 
 .form-tittle {
-  color: var(--navyblue, #2e2f42);
+  color: var(--navyblue);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -758,7 +758,7 @@ button {
 .form-name-lable {
   display: block;
   margin-bottom: 4px;
-  color: var(--lightslate, #8e8f99);
+  color: var(--lightslate);
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.48px;
@@ -776,10 +776,10 @@ button {
 }
 
 .modal-form-input:focus {
-  border-color: #4d5ae5;
+  border-color: var(--iris);
 }
 .modal-form-input:focus + svg {
-  fill: #4d5ae5;
+  fill: var(--iris);
 }
 .input-container {
   position: relative;
@@ -796,24 +796,25 @@ button {
 .input-container-svg:focus {
   fill: var(--iris);
 }
+.form-textarea {
+  margin-bottom: 16px;
+}
 .comment-form {
   height: 120px;
   width: 100%;
   resize: none;
-  color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.48px;
   padding: 8px 16px;
   border-radius: 4px;
   outline: transparent;
-  margin-bottom: 16px;
   background-color: transparent;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.comment-form::placeholder {
+.comment-form: :placeholder {
   color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   font-size: 12px;
   font-weight: 400;
@@ -821,7 +822,7 @@ button {
   letter-spacing: 0.48px;
 }
 .comment-form:focus {
-  border-color: var(--iris, #4d5ae5);
+  border-color: var(--iris);
   color: black;
 }
 .check-box-container {
@@ -829,7 +830,7 @@ button {
 }
 .check-text {
   display: block;
-  color: var(--lightslate, #8e8f99);
+  color: var(--lightslate);
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.48px;
@@ -837,9 +838,9 @@ button {
 }
 
 .check-input:checked + .check-text .check-box {
-  background-color: #404bbf;
+  background-color: var(--ocean);
   border: none;
-  fill: #f4f4fd;
+  fill: var(--cloud);
 }
 
 .check-box {
@@ -855,10 +856,9 @@ button {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.check-on {
-}
+
 .agreement-link {
-  color: var(--iris, #4d5ae5);
+  color: var(--iris);
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
