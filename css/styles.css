@@ -721,7 +721,6 @@ button {
 .form-button {
   display: inline-flex;
   justify-content: center;
-
   align-items: center;
   min-width: 165px;
   max-height: 40px;
@@ -737,7 +736,14 @@ button {
   background: var(--iris);
   border: none;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.form-button:hover,
+.form-button:focus {
+  background-color: var(--ocean);
+}
+
 .svg-button {
   fill: currentColor;
   margin-left: 16px;
@@ -787,6 +793,7 @@ button {
 
 .input-container-svg {
   position: absolute;
+  fill: var(--navyblue);
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
@@ -800,6 +807,7 @@ button {
   margin-bottom: 16px;
 }
 .comment-form {
+  display: block;
   height: 120px;
   width: 100%;
   resize: none;
@@ -846,6 +854,7 @@ button {
 
 .check-box {
   display: inline-flex;
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -864,7 +873,6 @@ button {
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 0.48px;
-  padding-left: 4px;
   text-decoration-line: underline;
 }
 .modal-form-btn {
@@ -890,6 +898,7 @@ button {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-btn:focus {
+.modal-form-btn:focus,
+.modal-form-btn:hover {
   background-color: var(--ocean);
 }
